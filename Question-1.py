@@ -16,6 +16,7 @@ wait=WebDriverWait(driver,10)#Create explicit wait object with 10 second wait ti
 wait.until(EC.presence_of_element_located((By.ID,"Check")))#wait until the presence of check button
 btn=driver.find_element(By.ID,"Check")#locate the check button
 btn.click()#click the check button
+sleep(4)#pausing execution for 4 seconds
 driver.quit()#quitting the browser
 
 
